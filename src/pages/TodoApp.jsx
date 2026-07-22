@@ -7,8 +7,7 @@ function TodoApp() {
   const [todos, setTodos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [filter, setFilter] = useState('all'); // all | active | completed
-
+  const [filter, setFilter] = useState('all'); 
   
   const fetchTodos = useCallback(async (currentFilter = filter) => {
     try {
